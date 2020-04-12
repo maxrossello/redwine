@@ -6,7 +6,6 @@ Tests are performed through [redmine_testsuites](https://github.com/maxrossello/
 
 ## Current fixes
 
-* fixing rack gem to v2.0.8 in Gemfile until Redmine code upgrade to support rack v2.1.x. Some tests failing otherwise.
 * tags for issue priority are created from priority positions rather than enumeration id's. 
   Since enumerations are used for multiple types, the id's are not unique and may change with runtime configuration. Themes cannot therefore style the priority tags in a unique way.
 * IMAP mail folder check formerly reset the seen flag to available emails.
