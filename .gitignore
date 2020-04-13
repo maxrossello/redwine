@@ -7,6 +7,7 @@ config/
 db/
 files/
 log/
+plugins/
 public/
 test/html_reports/
 tmp/
