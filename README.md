@@ -4,6 +4,8 @@ Redwine is a Redmine profile holding some enhancements and fixes encountered aga
 
 Tests are performed through [redmine_testsuites](https://github.com/maxrossello/redmine_testsuites) including the plugins it supports.
 
+The plugin version corresponds to minimum version of Redmine required. Look at dedicated branch for each Redmine version.
+
 ## Current fixes
 
 * tags for issue priority are created from priority positions rather than enumeration id's. 
