@@ -28,10 +28,10 @@ Redmine::Plugin.register :redwine do
   name 'Redwine Core'
   author 'Massimo Rossello'
   description 'Redwine profile for Redmine. Contains main customizations and fixes wrt Redmine core code'
-  version '4.2.1'
+  version '4.2.2'
   url 'https://github.com/maxrossello/redwine.git'
   author_url 'https://github.com/maxrossello'
-  requires_redmine :version => '4.2.1'
+  requires_redmine :version => '4.2.2'
 end 
 
 require_dependency 'imap_patch'
