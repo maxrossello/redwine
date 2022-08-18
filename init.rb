@@ -34,5 +34,5 @@ Redmine::Plugin.register :redwine do
   requires_redmine :version => '5.0.2'
 end 
 
-require_dependency 'imap_patch'
-require_dependency 'issue_priority_patch'
+require_relative 'lib/imap_patch'
+require_relative 'lib/issue_priority_patch'

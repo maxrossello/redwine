@@ -22,16 +22,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-module Redwine
-  module IssuePriorityPatch
-    def css_classes
-      "priority-#{position} priority-#{position_name}"
-    end
+module IssuePriorityPatch
+  def css_classes
+    "priority-#{position} priority-#{position_name}"
   end
 end
 
-unless IssuePriority.included_modules.include?(Redwine::IssuePriorityPatch)
-    IssuePriority.send(:prepend, Redwine::IssuePriorityPatch)
+unless IssuePriority.included_modules.include?(IssuePriorityPatch)
+    IssuePriority.send(:prepend, IssuePriorityPatch)
 end
 
 
