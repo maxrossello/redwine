@@ -1,6 +1,6 @@
 # Redwine profile for Redmine
 #
-# Copyright (C) 2020    Massimo Rossello 
+# Copyright (C) 2020-2023    Massimo Rossello 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -28,10 +28,10 @@ Redmine::Plugin.register :redwine do
   name 'Redwine Core'
   author 'Massimo Rossello'
   description 'Redwine profile for Redmine. Contains main customizations and fixes wrt Redmine core code'
-  version '4.2.9'
+  version '4.2.10'
   url 'https://github.com/maxrossello/redwine.git'
   author_url 'https://github.com/maxrossello'
-  requires_redmine :version => '4.2.9'
+  requires_redmine :version => '4.2.10'
 end 
 
 require_dependency 'imap_patch'
