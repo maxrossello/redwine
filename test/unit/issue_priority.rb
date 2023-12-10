@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Redwine profile for Redmine
 #
 # Copyright (C) 2020    Massimo Rossello https://github.com/maxrossello
@@ -20,7 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-require File.expand_path('../../test_helper', __FILE__)
+require_relative '../test_helper'
 
 def test_css_classes_should_include_priority_with_position
   issue = Issue.new(:priority => IssuePriority.find(8))

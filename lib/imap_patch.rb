@@ -35,12 +35,12 @@ module ImapPatch
     end
     imap.login(imap_options[:username], imap_options[:password]) unless imap_options[:username].nil?
     imap.select(folder)
-    # Azcom customization start
+    # redwine customization start
     imap.uid_search(['ALL']).each do |uid|
       imap.uid_fetch(uid,'RFC822')[0].attr['RFC822']
       imap.uid_store(uid, "-FLAGS", [:Seen])
     end
-    # Azcom customization end
+    # redwine customization end
     imap.logout
     imap.disconnect
     super(imap_options, options)

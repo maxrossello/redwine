@@ -24,7 +24,7 @@ require 'redmine'
 
 Rails.logger.info 'Redwine'
 
-Redmine::Plugin.register :redwine do
+plugin = Redmine::Plugin.register :redwine do
   name 'Redwine Core'
   author 'Massimo Rossello'
   description 'Redwine profile for Redmine. Contains main customizations and fixes wrt Redmine core code. Defines consistent set of tested plugin versions.'
@@ -36,3 +36,20 @@ end
 
 require_relative 'lib/imap_patch'
 require_relative 'lib/issue_priority_patch'
+require_relative 'lib/plugin_version_patch'
+
+# each hash contains conditions in AND; plugin is supported if any hash in array matches 
+supported_plugins = {
+  redmine_translation_terms: { tilde_greater_than: '5.1.0', mandatory: false },
+  redmine_base_deface:       { version_or_higher:  '5.1.0', mandatory: false },
+  redmine_better_overview:   { tilde_greater_than: '5.1.0', mandatory: false },
+  redmine_extended_watchers: { tilde_greater_than: '5.1.0', mandatory: false },
+  redmine_pluggable_themes:  { tilde_greater_than: '5.1.0', mandatory: false },
+  sidebar_hide:              { version_or_higher:  '5.1.0', mandatory: false }
+}
+
+Rails.configuration.after_initialize do
+  if plugin.methods.include? :compatible_redmine_plugins
+    plugin.compatible_redmine_plugins(supported_plugins)
+  end
+end

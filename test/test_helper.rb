@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Redwine profile for Redmine
 #
 # Copyright (C) 2020    Massimo Rossello https://github.com/maxrossello
@@ -21,4 +23,4 @@
 # SOFTWARE.
 
 # Load the Redmine helper
-require File.expand_path('../../../../test/test_helper', __FILE__)
+require_relative '../../../test/test_helper'
