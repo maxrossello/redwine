@@ -87,7 +87,7 @@ module PluginVersionPatch
             varr = value.collect {|s| s.split('.').collect(&:to_i)}
             case key
             when :version
-              supported = false unless varr.include?(current.slice(0, 3))
+              supported = false unless varr.include?(current)
             when :version_or_higher
               supported = false unless (current <=> varr.first) >= 0
             when :version_lower_than
