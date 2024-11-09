@@ -1,7 +1,7 @@
 # Make sure that emails in folder don't have the Seen flag, since moving from the main folder 
 # via a filter may have set it
 
-# Copyright (C) 2020    Massimo Rossello https://github.com/maxrossello
+# Copyright (C) 2020-   Massimo Rossello https://github.com/maxrossello
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

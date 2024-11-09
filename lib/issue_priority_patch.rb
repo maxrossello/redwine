@@ -2,7 +2,7 @@
 # rather than on the id of the enum itself, since other types of enums may make these numbers random.
 # As a consequence, the issues color styling in theme is then univoquely defined.
 
-# Copyright (C) 2020    Massimo Rossello https://github.com/maxrossello
+# Copyright (C) 2020-   Massimo Rossello https://github.com/maxrossello
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
