@@ -11,3 +11,5 @@ plugins/
 public/
 test/html_reports/
 tmp/
+coverage/
+themes/
