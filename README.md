@@ -2,11 +2,13 @@
 
 Redwine is a Redmine profile holding some enhancements and fixes encountered against the official Redmine release.
 
+It also states the plugins and their version that are proven to work properly together with the targeted Redmine version.
+
 ## Version
 
 Tests are performed through [redmine_testsuites](https://github.com/maxrossello/redmine_testsuites) including all the plugins it supports.
 
-The plugin version corresponds to minimum version of Redmine required. Look at dedicated branch for each Redmine version.
+The plugin version corresponds to the exact version of Redmine supported. A release is published for each of the Redmine versions that are supported. The init.rb file reports the versions of supported plugins that are proven to work properly with the targeted Redmine version.
 
 ## Enhancements
 
