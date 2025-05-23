@@ -28,7 +28,7 @@ plugin = Redmine::Plugin.register :redwine do
   name 'Redwine Core'
   author 'Massimo Rossello'
   description 'Redwine profile for Redmine. Contains main customizations and fixes wrt Redmine core code. Defines consistent set of tested plugin versions.'
-  version '6.0.5'
+  version '6.0.5.1'
   url 'https://github.com/maxrossello/redwine.git'
   author_url 'https://github.com/maxrossello'
   requires_redmine :version => '6.0.5'
@@ -43,7 +43,7 @@ supported_plugins = {
     redmine_translation_terms: { tilde_greater_than: '6.0.1', mandatory: false },
     redmine_base_deface:       { version_or_higher:  '6.0.1', mandatory: false },
     redmine_better_overview:   { tilde_greater_than: '6.0.1', mandatory: false },
-    redmine_extended_watchers: { tilde_greater_than: '6.0.1', mandatory: false },
+    redmine_extended_watchers: { tilde_greater_than: '6.0.5', mandatory: false },
     redmine_pluggable_themes:  { tilde_greater_than: '6.0.1', mandatory: false }
 }
 
